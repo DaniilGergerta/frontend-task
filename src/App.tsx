@@ -1,10 +1,15 @@
-export function App() {
+import type { FC } from 'react';
+import { DefaultModal } from './components/DefaultModal';
+
+export const App: FC = () => {
   return (
     <>
-      <h1>Frontend task</h1>
-      <button>
-        Open modal
-      </button>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatum, nostrum, dolorem a error
+        laboriosam officiis corporis tenetur tempore quibusdam incidunt ad cupiditate expedita, dolorum officia ducimus
+        porro sapiente optio!
+      </p>
+      <DefaultModal />
     </>
-  )
-}
+  );
+};

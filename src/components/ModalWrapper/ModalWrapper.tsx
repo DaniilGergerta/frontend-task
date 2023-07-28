@@ -12,9 +12,9 @@ interface IModalWrapperProps {
 export const ModalWrapper: FC<PropsWithChildren<IModalWrapperProps>> = memo(({ open, onClose, children }) => {
   if (!open) return null;
 
-  const portalElement = document.getElementById('portal');
+  const modalElement = document.getElementById('modal');
 
-  if (!portalElement) {
+  if (!modalElement) {
     return null;
   }
 
@@ -24,6 +24,6 @@ export const ModalWrapper: FC<PropsWithChildren<IModalWrapperProps>> = memo(({ o
         <div className={styles.modalWrapper}>{children}</div>
       </div>
     </>,
-    portalElement,
+    modalElement,
   );
 });

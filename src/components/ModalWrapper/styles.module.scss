@@ -1,5 +1,3 @@
-@import '/src/constants/variables';
-
 .modalWrapper {
     position: relative;
     z-index: 100;
@@ -14,7 +12,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: $bgblack;
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 100;
     backdrop-filter: blur(3px);
 }
